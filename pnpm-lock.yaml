@@ -147,8 +147,8 @@ importers:
         specifier: 1.0.1
         version: 1.0.1
       '@signalapp/mock-server':
-        specifier: 23.0.0
-        version: 23.0.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+        specifier: 24.0.2
+        version: 24.0.2(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       '@signalapp/parchment-cjs':
         specifier: 3.0.1
         version: 3.0.1
@@ -387,8 +387,8 @@ importers:
         specifier: 0.7.1
         version: 0.7.1
       electron:
-        specifier: 42.3.0
-        version: 42.3.0
+        specifier: 43.0.0
+        version: 43.0.0
       electron-builder:
         specifier: 26.11.1
         version: 26.11.1(electron-builder-squirrel-windows@26.11.1)
@@ -1168,6 +1168,10 @@ packages:
   '@develar/schema-utils@2.6.5':
     resolution: {integrity: sha512-0cp4PsWQ/9avqTVMCtZ+GirikIA36ikvjtHweU4/j8yLtgObI0+JUPhYFScgwlteveGB1rt3Cm8UhN04XayDig==, tarball: https://registry.npmjs.org/@develar/schema-utils/-/schema-utils-2.6.5.tgz}
     engines: {node: '>= 8.9.0'}
+
+  '@electron-internal/extract-zip@1.0.4':
+    resolution: {integrity: sha512-Zr1Vs7E9tpCNhZHDAbFVXc2gEVCG9RqPDjrno5+bdgB6LRAuvgyMHJut4NCVyYwtAieapMzc3fiQ3CSTi75ARg==, tarball: https://registry.npmjs.org/@electron-internal/extract-zip/-/extract-zip-1.0.4.tgz}
+    engines: {node: '>=22.12.0'}
 
   '@electron/asar@3.4.1':
     resolution: {integrity: sha512-i4/rNPRS84t0vSRa2HorerGRXWyF4vThfHesw0dmcWHp+cspK743UanA0suA5Q5y8kzY2y6YKrvbIUn69BCAiA==, tarball: https://registry.npmjs.org/@electron/asar/-/asar-3.4.1.tgz}
@@ -4199,8 +4203,8 @@ packages:
   '@signalapp/minimask@1.0.1':
     resolution: {integrity: sha512-QAwo0joA60urTNbW9RIz6vLKQjy+jdVtH7cvY0wD9PVooD46MAjE40MLssp4xUJrph91n2XvtJ3pbEUDrmT2AA==, tarball: https://registry.npmjs.org/@signalapp/minimask/-/minimask-1.0.1.tgz}
 
-  '@signalapp/mock-server@23.0.0':
-    resolution: {integrity: sha512-w+Olk/o6kO0DuerE+PNGFSUp1bzsr6S49nvMv7a9H97WVNMqwqz89fX7I8FYUtQ7XWtNtXWewriIOWEmWSPH9g==, tarball: https://registry.npmjs.org/@signalapp/mock-server/-/mock-server-23.0.0.tgz}
+  '@signalapp/mock-server@24.0.2':
+    resolution: {integrity: sha512-UO4bUB0z1HGB/FvIVuUnw9I8P6jM6GONI4l5yHjngIbreVhTuJ+EoyhZWhrK9WUimE9pMtNBBbPla6SwLxickQ==, tarball: https://registry.npmjs.org/@signalapp/mock-server/-/mock-server-24.0.2.tgz}
 
   '@signalapp/parchment-cjs@3.0.1':
     resolution: {integrity: sha512-hSBMQ1M7wE4GcC8ZeNtvpJF+DAJg3eIRRf1SiHS3I3Algav/sgJJNm6HIYm6muHuK7IJmuEjkL3ILSXgmu0RfQ==, tarball: https://registry.npmjs.org/@signalapp/parchment-cjs/-/parchment-cjs-3.0.1.tgz}
@@ -6379,8 +6383,8 @@ packages:
     engines: {node: '>= 12.20.55'}
     hasBin: true
 
-  electron@42.3.0:
-    resolution: {integrity: sha512-9ZiLdRXk+WDxW1OgIUz8J2rIQ5TYU9o629gCOjU48Q3dQiOmym7osWsH5Ubs/Jh4uuFLn6m6SBD2rmRXLAPz9g==, tarball: https://registry.npmjs.org/electron/-/electron-42.3.0.tgz}
+  electron@43.0.0:
+    resolution: {integrity: sha512-PV60GsWU6qufhuOhw3n+Yix3WPDcqDtBqE8orbEQGQGHEkgp9o/JCPgb7L4vIL0r1HnfPdqSRtboOTqbDkcFDQ==, tarball: https://registry.npmjs.org/electron/-/electron-43.0.0.tgz}
     engines: {node: '>= 22.12.0'}
     hasBin: true
 
@@ -11316,6 +11320,8 @@ snapshots:
       ajv: 6.14.0
       ajv-keywords: 3.5.2(ajv@6.14.0)
 
+  '@electron-internal/extract-zip@1.0.4': {}
+
   '@electron/asar@3.4.1':
     dependencies:
       commander: 5.1.0
@@ -14569,7 +14575,7 @@ snapshots:
 
   '@signalapp/minimask@1.0.1': {}
 
-  '@signalapp/mock-server@23.0.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
+  '@signalapp/mock-server@24.0.2(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
       '@indutny/parallel-prettier': 3.0.0(prettier@3.8.3)
       '@indutny/protopiler': 4.0.0
@@ -17100,11 +17106,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  electron@42.3.0:
+  electron@43.0.0:
     dependencies:
+      '@electron-internal/extract-zip': 1.0.4
       '@electron/get': 5.0.0
       '@types/node': 24.12.0
-      extract-zip: 2.0.1
     transitivePeerDependencies:
       - supports-color
 

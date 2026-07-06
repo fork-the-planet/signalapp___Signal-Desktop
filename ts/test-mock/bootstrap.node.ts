@@ -495,7 +495,7 @@ export class Bootstrap {
 
     debug('starting the app');
 
-    const { port, family } = this.server.address();
+    const { port } = this.server.address();
 
     let startAttempts = 0;
     const MAX_ATTEMPTS = 4;
@@ -509,7 +509,7 @@ export class Bootstrap {
       }
 
       // oxlint-disable-next-line no-await-in-loop
-      const config = await this.#generateConfig(port, family, extraConfig);
+      const config = await this.#generateConfig(port, extraConfig);
 
       const startedApp = new App({
         main: ELECTRON,
@@ -953,12 +953,9 @@ export class Bootstrap {
 
   async #generateConfig(
     port: number,
-    family: string,
     extraConfig?: Partial<RendererConfigType>
   ): Promise<string> {
-    const host = family === 'IPv6' ? '[::1]' : '127.0.0.1';
-
-    const url = `https://${host}:${port}`;
+    const url = `https://localhost:${port}`;
     return JSON.stringify({
       ...(await loadCertificates()),
 
