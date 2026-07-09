@@ -3,6 +3,6 @@
     "messageformat": "Signal uses your camera for video calling."
   },
   "NSMicrophoneUsageDescription": {
-    "messageformat": "Signal needs access to your microphone to make and receive phone calls and record voice messages."
+    "messageformat": "Signal 需要存取到您部機個咪，以便打出同接收電話通話以及錄製語音訊息。"
   }
 }
