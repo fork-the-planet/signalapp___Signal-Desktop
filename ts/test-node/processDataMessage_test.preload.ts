@@ -126,6 +126,25 @@ describe('processDataMessage', () => {
     ]);
   });
 
+  it('should process attachments with null fileName', () => {
+    const out = check({
+      attachments: [
+        {
+          ...UNPROCESSED_ATTACHMENT,
+          fileName: null,
+        },
+      ],
+    });
+
+    assert.deepStrictEqual(out.attachments, [
+      {
+        ...PROCESSED_ATTACHMENT,
+        fileName: undefined,
+        downloadPath: 'random-path',
+      },
+    ]);
+  });
+
   it('should process attachments with 0 cdnId', () => {
     const out = check({
       attachments: [

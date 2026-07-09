@@ -116,7 +116,7 @@ export function processAttachment(
     cdnKey: attachmentIdentifier?.cdnKey,
     cdnNumber: cdnNumber ?? 0,
     chunkSize: chunkSize ?? 0,
-    fileName: fileName ?? '',
+    fileName: fileName ?? undefined,
     flags: flags ?? 0,
     width: width ?? 0,
     height: height ?? 0,

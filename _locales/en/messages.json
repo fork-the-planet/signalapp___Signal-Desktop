@@ -4086,6 +4086,22 @@
     "messageformat": "Add a Sticker",
     "description": "Sticker Picker > Trigger Button > Accessibility label"
   },
+  "icu:FunPicker__Label--StickerReply": {
+    "messageformat": "Reply",
+    "description": "When replying to a message and previewing a sticker to send, this is the label for the preview view."
+  },
+  "icu:FunPicker__Label--SendStickerReply": {
+    "messageformat": "Send",
+    "description": "When replying to a message and previewing a sticker to send, this is the accessibility label for the Send button. Sticker Picker > Preview sticker > Send button > Accessibility label"
+  },
+  "icu:FunPicker__Label--CancelStickerReply": {
+    "messageformat": "Cancel",
+    "description": "When replying to a message and previewing a sticker to send, this is the accessibility label for the Cancel button. Sticker Picker > Preview sticker > Cancel button > Accessibility label"
+  },
+  "icu:FunPicker__Label--Sticker": {
+    "messageformat": "Sticker",
+    "description": "When replying to a message and previewing a sticker to send, this is the accessibility label for the sticker preview image."
+  },
   "icu:confirmation-dialog--Cancel": {
     "messageformat": "Cancel",
     "description": "Appears on the cancel button in confirmation dialogs."
