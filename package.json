@@ -1,6 +1,7 @@
 {
   "$schema": "./package.schema.json",
   "packageManager": "pnpm@11.5.2",
+  "private": true,
   "name": "signal-desktop",
   "productName": "Signal",
   "description": "Private messaging from your desktop",
@@ -136,6 +137,7 @@
     "@babel/plugin-transform-typescript": "7.28.6",
     "@babel/preset-react": "7.28.5",
     "@babel/preset-typescript": "7.28.5",
+    "@changesets/cli": "2.31.0",
     "@csstools/stylelint-formatter-github": "2.0.0",
     "@electron/asar": "3.4.1",
     "@electron/fuses": "1.5.0",
