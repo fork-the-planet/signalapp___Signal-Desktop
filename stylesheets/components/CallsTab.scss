@@ -162,9 +162,7 @@
   &:focus {
     outline: none;
     @include mixins.keyboard-mode {
-      box-shadow:
-        0 0 0 2px variables.$color-white,
-        0 0 0 4px variables.$color-ultramarine;
+      @include mixins.axo-focus-ring;
     }
   }
 
@@ -385,7 +383,7 @@
   &:focus {
     outline: none;
     @include mixins.keyboard-mode {
-      box-shadow: 0 0 0 2px variables.$color-ultramarine;
+      @include mixins.axo-focus-ring;
     }
   }
   &:disabled,

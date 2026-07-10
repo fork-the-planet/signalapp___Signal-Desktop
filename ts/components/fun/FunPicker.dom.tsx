@@ -183,7 +183,7 @@ const StagedStickerReply = memo(function StagedStickerReply(props: {
       <Dialog.Content onEscapeKeyDown={event => event.stopPropagation()}>
         <div
           className={tw(
-            'absolute legacy-z-index-above-above-base flex size-full items-center justify-center bg-elevated-background-primary/60 backdrop-blur-thin'
+            'absolute legacy-z-index-above-above-base flex size-full items-center justify-center bg-material-primary backdrop-blur-thick'
           )}
         >
           <div className={tw('size-50')}>
@@ -198,7 +198,7 @@ const StagedStickerReply = memo(function StagedStickerReply(props: {
           <div className={tw('absolute bottom-0 flex w-full items-center p-4')}>
             <AxoIconButton.Root
               size="md"
-              variant="secondary"
+              variant="strong-secondary"
               symbol="x"
               label={i18n('icu:FunPicker__Label--CancelStickerReply')}
               onClick={handleCancelStickerReply}
@@ -206,7 +206,7 @@ const StagedStickerReply = memo(function StagedStickerReply(props: {
             />
             <span
               className={tw(
-                'flex grow justify-center type-body-medium font-medium text-label-secondary'
+                'flex grow justify-center type-body-medium font-medium text-secondary'
               )}
             >
               <AxoSymbol.InlineGlyph symbol="reply" label={null} />
@@ -215,7 +215,7 @@ const StagedStickerReply = memo(function StagedStickerReply(props: {
             </span>
             <AxoIconButton.Root
               size="md"
-              variant="primary"
+              variant="strong-primary"
               symbol="send-fill"
               label={i18n('icu:FunPicker__Label--SendStickerReply')}
               onClick={handleSendStickerReply}

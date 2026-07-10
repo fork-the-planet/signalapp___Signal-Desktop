@@ -135,10 +135,10 @@ export namespace AxoSelect {
   /**
    * Visual style of the trigger button.
    * - `default`: Filled secondary background (default).
-   * - `floating`: Elevated with a drop shadow.
-   * - `borderless`: Transparent, shows a background only on hover.
+   * - `elevated`: Elevated with a drop shadow.
+   * - `implied`: Transparent, shows a background only on hover.
    */
-  export type TriggerVariant = 'default' | 'floating' | 'borderless';
+  export type TriggerVariant = 'default' | 'elevated' | 'implied';
 
   /**
    * Width of the trigger button.
@@ -156,29 +156,29 @@ export namespace AxoSelect {
 
   const baseTriggerStyles = tw(
     'group relative inline-flex items-center',
-    'rounded-full text-start type-body-medium font-medium text-label-primary',
-    'disabled:text-label-disabled',
-    'outline-none keyboard-mode:focus:outline-focus-ring',
+    'rounded-full text-start type-body-medium font-medium text-primary',
+    'disabled:text-disabled',
+    'outline-none keyboard-mode:focus:axo-focus-ring',
     'forced-colors:border'
   );
 
   const TriggerVariants = variants<TriggerVariant>('AxoSelect.TriggerVariant', {
     default: tw(
       baseTriggerStyles,
-      'bg-fill-secondary',
-      'enabled:active:bg-fill-secondary-pressed'
+      'bg-primary',
+      'enabled:active:bg-primary-pressed'
     ),
-    floating: tw(
+    elevated: tw(
       baseTriggerStyles,
-      'bg-fill-floating',
+      'bg-material-tertiary backdrop-blur-thin',
       'shadow-elevation-1',
-      'enabled:active:bg-fill-floating-pressed'
+      'enabled:active:bg-material-tertiary-pressed'
     ),
-    borderless: tw(
+    implied: tw(
       baseTriggerStyles,
       'bg-transparent',
-      'enabled:hover:bg-fill-secondary',
-      'enabled:active:bg-fill-secondary-pressed'
+      'enabled:hover:bg-primary',
+      'enabled:active:bg-primary-pressed'
     ),
   });
 
@@ -340,7 +340,7 @@ export namespace AxoSelect {
           >
             <Select.ScrollUpButton
               className={tw(
-                'flex items-center justify-center p-1 text-label-primary'
+                'flex items-center justify-center p-1 text-primary'
               )}
             >
               <AxoSymbol.Icon symbol="chevron-up" size={14} label={null} />
@@ -354,7 +354,7 @@ export namespace AxoSelect {
             </Select.Viewport>
             <Select.ScrollDownButton
               className={tw(
-                'flex items-center justify-center p-1 text-label-primary'
+                'flex items-center justify-center p-1 text-primary'
               )}
             >
               <AxoSymbol.Icon symbol="chevron-down" size={14} label={null} />

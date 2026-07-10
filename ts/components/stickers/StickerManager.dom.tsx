@@ -154,7 +154,7 @@ export const StickerManager = memo(function StickerManagerInner({
           <>
             <h2
               className={tw(
-                'mx-2 my-1 type-body-medium font-semibold text-label-primary select-none'
+                'mx-2 my-1 type-body-medium font-semibold text-primary select-none'
               )}
             >
               {i18n('icu:stickers--StickerManager--BlessedPacks')}
@@ -164,7 +164,7 @@ export const StickerManager = memo(function StickerManagerInner({
             ) : (
               <p
                 className={tw(
-                  'mx-2 mb-1 type-body-small text-label-secondary select-none'
+                  'mx-2 mb-1 type-body-small text-secondary select-none'
                 )}
               >
                 {i18n('icu:stickers--StickerManager--BlessedPacks--Empty')}
@@ -176,14 +176,14 @@ export const StickerManager = memo(function StickerManagerInner({
               <>
                 <h2
                   className={tw(
-                    'mx-2 mt-2 mb-0.5 type-body-medium font-semibold text-label-primary select-none'
+                    'mx-2 mt-2 mb-0.5 type-body-medium font-semibold text-primary select-none'
                   )}
                 >
                   {i18n('icu:stickers--StickerManager--ReceivedPacks2')}
                 </h2>
                 <p
                   className={tw(
-                    'mx-2 mb-1 type-body-small text-label-secondary select-none'
+                    'mx-2 mb-1 type-body-small text-secondary select-none'
                   )}
                 >
                   {i18n(
@@ -205,14 +205,12 @@ export const StickerManager = memo(function StickerManagerInner({
               )}
             >
               <div className={tw('max-w-60')}>
-                <div
-                  className={tw('mb-4 type-body-medium text-label-secondary')}
-                >
+                <div className={tw('mb-4 type-body-medium text-secondary')}>
                   {i18n('icu:stickers--StickerManager--MyStickers--None')}
                 </div>
                 <div>
                   <AxoButton.Root
-                    variant="secondary"
+                    variant="strong-secondary"
                     size="md"
                     onClick={setTabAll}
                   >

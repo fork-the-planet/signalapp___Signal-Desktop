@@ -401,9 +401,9 @@ export function PreferencesDonateFlow({
         <button
           className={tw(
             'flex',
-            'bg-color-fill-primary enabled:active:bg-color-fill-primary-pressed',
+            'bg-accent enabled:active:bg-accent-pressed',
             'rounded-md',
-            'justify-center type-body-medium text-label-primary-on-color',
+            'justify-center type-body-medium text-primary-oncolor',
             'mt-6 mb-3 h-[36px] w-[280px] py-2'
           )}
           onClick={() => setStep('stripePaymentDetails')}
@@ -416,9 +416,7 @@ export function PreferencesDonateFlow({
             )}
           />
           <span
-            className={tw(
-              'ms-3 flex type-body-medium text-label-primary-on-color'
-            )}
+            className={tw('ms-3 flex type-body-medium text-primary-oncolor')}
           >
             {i18n('icu:DonateFlow__CreditOrDebitCard')}
           </span>
@@ -483,7 +481,7 @@ export function PreferencesDonateFlow({
           className={tw('flex min-w-[400px] justify-end gap-3 type-body-large')}
         >
           <AxoButton.Root
-            variant="secondary"
+            variant="strong-secondary"
             size="lg"
             disabled={isDisabled}
             onClick={onBack}
@@ -491,7 +489,7 @@ export function PreferencesDonateFlow({
             {i18n('icu:DonateFlow__Paypal__Cancel')}
           </AxoButton.Root>
           <AxoButton.Root
-            variant="primary"
+            variant="strong-primary"
             size="lg"
             disabled={isDisabled}
             onClick={() => {
@@ -769,7 +767,7 @@ function AmountPicker({
 
   const continueButton = (
     <AxoButton.Root
-      variant={isOnline ? 'primary' : 'secondary'}
+      variant={isOnline ? 'strong-primary' : 'strong-secondary'}
       size="lg"
       disabled={!isContinueEnabled}
       onClick={handleContinueClicked}
@@ -1014,7 +1012,7 @@ function CardForm({
     <AxoButton.Root
       disabled={isDonateDisabled}
       onClick={handleDonateClicked}
-      variant={isOnline ? 'primary' : 'secondary'}
+      variant={isOnline ? 'strong-primary' : 'strong-secondary'}
       size="lg"
     >
       {i18n('icu:PreferencesDonations__donate-button-with-amount', {

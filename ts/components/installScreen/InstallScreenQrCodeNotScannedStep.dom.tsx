@@ -145,13 +145,13 @@ export function InstallScreenQrCodeNotScannedStep({
             </AxoAlertDialog.Body>
             <AxoAlertDialog.Footer>
               <AxoAlertDialog.Action
-                variant="secondary"
+                variant="strong-secondary"
                 onClick={restartInstall}
               >
                 {i18n('icu:cancel')}
               </AxoAlertDialog.Action>
               <AxoAlertDialog.Action
-                variant="destructive"
+                variant="strong-destructive"
                 onClick={continueInstallWithDataDeletion}
               >
                 {i18n('icu:Install__confirm-data-deletion__continue')}

@@ -22,6 +22,7 @@
   border-radius: 8px;
   box-shadow: 0 8px 20px variables.$color-black-alpha-30;
   background: FunConstants.$Fun__BgColor;
+  backdrop-filter: FunConstants.$Fun__BgFilter;
   user-select: none;
   overflow: clip;
   -webkit-app-region: no-drag;
@@ -29,7 +30,7 @@
   &:focus {
     outline: none;
     @include mixins.keyboard-mode {
-      outline: 2px solid variables.$color-ultramarine;
+      @include mixins.axo-focus-ring;
     }
   }
 }

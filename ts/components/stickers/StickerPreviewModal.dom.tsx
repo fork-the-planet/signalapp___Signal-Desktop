@@ -55,9 +55,7 @@ function renderBody({
 
   if (pack.status === 'error') {
     return (
-      <div
-        className={tw('px-12 py-6 text-center text-color-label-destructive')}
-      >
+      <div className={tw('px-12 py-6 text-center text-destructive')}>
         {i18n('icu:stickers--StickerPreview--Error')}
       </div>
     );
@@ -99,7 +97,7 @@ function renderBody({
       </h2>
       <div
         className={tw(
-          'mb-3 justify-items-center type-body-medium text-label-secondary'
+          'mb-3 justify-items-center type-body-medium text-secondary'
         )}
       >
         <div>{pack.author}</div>
@@ -146,7 +144,7 @@ function renderBody({
             <div
               key={index}
               className={tw(
-                'aspect-square max-h-18 w-full max-w-18 rounded-md bg-fill-secondary'
+                'aspect-square max-h-18 w-full max-w-18 rounded-md bg-primary'
               )}
             />
           );
@@ -272,7 +270,7 @@ export const StickerPreviewModal = memo(function StickerPreviewModalInner({
           <AxoDialog.Footer>
             {isInstallFooterVisible(pack) && (
               <AxoDialog.Action
-                variant="primary"
+                variant="strong-primary"
                 onClick={handleInstall}
                 pending={pack.status === 'pending'}
               >
@@ -292,7 +290,7 @@ export const StickerPreviewModal = memo(function StickerPreviewModalInner({
       >
         <AxoConfirmDialog.Cancel />
         <AxoConfirmDialog.Action
-          variant="destructive"
+          variant="strong-destructive"
           onClick={handleUninstall}
         >
           {i18n('icu:stickers--StickerManager--Uninstall')}

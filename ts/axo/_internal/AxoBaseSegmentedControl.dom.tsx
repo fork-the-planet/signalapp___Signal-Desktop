@@ -77,7 +77,7 @@ export namespace ExperimentalAxoBaseSegmentedControl {
   );
 
   const RootStyles = variants<Variant>(`AxoBaseSegmentedControl.Variant`, {
-    track: tw(baseRootStyles, 'bg-fill-secondary'),
+    track: tw(baseRootStyles, 'bg-primary'),
     'no-track': baseRootStyles,
   });
 
@@ -87,8 +87,11 @@ export namespace ExperimentalAxoBaseSegmentedControl {
   );
 
   const IndicatorStyles = variants<Variant>(`AxoBaseSegmentedControl.Variant`, {
-    track: tw(baseIndicatorStyles, 'bg-fill-primary', 'shadow-elevation-1'),
-    'no-track': tw(baseIndicatorStyles, 'bg-fill-selected'),
+    track: tw(
+      baseIndicatorStyles,
+      'bg-control text-primary shadow-elevation-1'
+    ),
+    'no-track': tw(baseIndicatorStyles, 'bg-secondary text-primary'),
   });
 
   /**
@@ -183,15 +186,15 @@ export namespace ExperimentalAxoBaseSegmentedControl {
         type="button"
         className={tw(
           'relative flex min-w-0 items-center justify-center px-3 py-[5px]',
-          'cursor-pointer rounded-full type-body-medium font-medium text-label-primary',
-          'outline-border-focused not-forced-colors:outline-none not-forced-colors:keyboard-mode:focus:outline-focus-ring',
+          'cursor-pointer rounded-full type-body-medium font-medium text-primary',
+          'outline-focused-inner not-forced-colors:outline-none not-forced-colors:keyboard-mode:focus:axo-focus-ring',
           'forced-colors:bg-[ButtonFace] forced-colors:text-[ButtonText]',
           'forced-colors:data-[axo-contextmenu-state=open]:text-[HighlightText]',
           ItemWidths.get(context.itemWidth),
           isSelected && tw('forced-colors:text-[SelectedItemText]'),
           !isSelected &&
             tw(
-              'data-[axo-contextmenu-state=open]:bg-fill-secondary',
+              'data-[axo-contextmenu-state=open]:bg-primary',
               'forced-colors:data-[axo-contextmenu-state=open]:bg-[Highlight]'
             )
         )}

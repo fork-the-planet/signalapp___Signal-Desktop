@@ -126,7 +126,7 @@ export function LeftPaneChatFolders(
           onValueChange={handleValueChange}
         >
           <AxoSelect.Trigger
-            variant="floating"
+            variant="elevated"
             width="full"
             placeholder=""
             chevron="on-hover"

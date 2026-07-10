@@ -136,7 +136,7 @@ export function MessageRequestActions({
         <FlexWrapDetector>
           <div
             className={tw(
-              'flex flex-wrap justify-center gap-2',
+              'flex flex-wrap justify-center gap-2 p-1',
               '[&>button]:min-w-24',
               'container-scrollable:[&>button]:w-full'
             )}
@@ -180,7 +180,7 @@ export function MessageRequestActions({
                   setMrState(MessageRequestState.unblocking);
                 }}
                 size="md"
-                variant="secondary"
+                variant="strong-secondary"
               >
                 {i18n('icu:MessageRequests--unblock')}
               </AxoButton.Root>
@@ -198,7 +198,7 @@ export function MessageRequestActions({
                   }
                 }}
                 size="md"
-                variant="secondary"
+                variant="strong-secondary"
               >
                 {i18n('icu:MessageRequests--accept')}
               </AxoButton.Root>

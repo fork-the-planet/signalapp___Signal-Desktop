@@ -506,7 +506,7 @@ async function startApp(): Promise<void> {
           await new Promise<void>((resolve, reject) => {
             showConfirmationDialog({
               cancelText: i18n('icu:quit'),
-              confirmStyle: 'destructive',
+              confirmStyle: 'strong-destructive',
               title: i18n('icu:deleteOldIndexedDBData'),
               // @ts-expect-error ConfirmationDialog migration: Needs description
               description: null,

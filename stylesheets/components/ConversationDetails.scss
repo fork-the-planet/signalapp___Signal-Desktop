@@ -51,7 +51,7 @@
 
   &-membership-list__member-label-button {
     @include mixins.font-body-small;
-    @include mixins.button-focus-outline(2px);
+    @include mixins.button-focus-outline;
 
     @include mixins.mouse-mode {
       &:hover {
@@ -407,21 +407,12 @@
         }
       }
 
-      &:focus {
+      &:focus,
+      &[data-focused='true'] {
         outline: none;
-      }
-
-      @mixin keyboard-focus-state($color) {
-        &[data-focused='true'] {
-          border-color: $color;
+        @include mixins.keyboard-mode {
+          @include mixins.axo-focus-ring;
         }
-      }
-
-      @include mixins.keyboard-mode {
-        @include keyboard-focus-state(variables.$color-ultramarine);
-      }
-      @include mixins.dark-keyboard-mode {
-        @include keyboard-focus-state(variables.$color-ultramarine-light);
       }
     }
 

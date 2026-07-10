@@ -238,7 +238,7 @@ function DonationsHome({
   const donateButton = (
     <span className={tw('mb-8')}>
       <AxoButton.Root
-        variant={isOnline ? 'primary' : 'secondary'}
+        variant={isOnline ? 'strong-primary' : 'strong-secondary'}
         size="lg"
         disabled={!isOnline}
         onClick={handleDonateButtonClicked}

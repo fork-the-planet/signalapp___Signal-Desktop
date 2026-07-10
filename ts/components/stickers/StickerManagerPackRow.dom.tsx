@@ -114,7 +114,7 @@ export const StickerManagerPackRow = memo(function StickerManagerPackRowInner({
       >
         <AxoConfirmDialog.Cancel />
         <AxoConfirmDialog.Action
-          variant="destructive"
+          variant="strong-destructive"
           onClick={handleConfirmUninstall}
         >
           {i18n('icu:stickers--StickerManager--Uninstall')}
@@ -146,9 +146,7 @@ export const StickerManagerPackRow = memo(function StickerManagerPackRowInner({
           )}
           <div className="module-sticker-manager__pack-row__meta">
             <div
-              className={tw(
-                'mb-0.5 flex flex-1 type-body-medium text-label-primary'
-              )}
+              className={tw('mb-0.5 flex flex-1 type-body-medium text-primary')}
             >
               <UserText text={pack.title} />
               {pack.isBlessed ? (
@@ -157,16 +155,14 @@ export const StickerManagerPackRow = memo(function StickerManagerPackRowInner({
                 </span>
               ) : null}
             </div>
-            <div
-              className={tw('flex flex-1 type-body-small text-label-secondary')}
-            >
+            <div className={tw('flex flex-1 type-body-small text-secondary')}>
               {pack.author}
             </div>
           </div>
           <div className="module-sticker-manager__pack-row__controls">
             {pack.status === 'installed' ? (
               <AxoIconButton.Root
-                variant="secondary"
+                variant="strong-secondary"
                 size="md"
                 symbol="check"
                 label={i18n('icu:stickers--StickerManager--Installed')}
@@ -175,7 +171,7 @@ export const StickerManagerPackRow = memo(function StickerManagerPackRowInner({
               />
             ) : (
               <AxoIconButton.Root
-                variant="secondary"
+                variant="strong-secondary"
                 size="md"
                 symbol="plus"
                 label={i18n('icu:stickers--StickerManager--Install')}

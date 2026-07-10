@@ -41,7 +41,7 @@ export namespace ExperimentalAxoBadge {
   const baseStyles = tw(
     'flex size-fit items-center justify-center-safe overflow-clip',
     'rounded-full font-semibold',
-    'bg-color-fill-primary text-label-primary-on-color',
+    'bg-accent text-primary-oncolor',
     'forced-color-adjust-none forced-colors:bg-[Mark] forced-colors:text-[MarkText]',
     'select-none'
   );
