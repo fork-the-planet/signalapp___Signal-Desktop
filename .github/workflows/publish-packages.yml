@@ -45,7 +45,10 @@ jobs:
         with:
           commit-message: Publish Packages
           pr-title: Publish Packages
-          version-script: pnpm changeset version
-          publish-script: pnpm changeset publish
+          version-script: pnpm changeset:version
+          publish-script: pnpm changeset:publish
           create-github-releases: false
           push-git-tags: true
+          commit-mode: github-api
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -114,7 +114,9 @@
     "check-upgradeable-deps": "node scripts/check-upgradeable-deps.mjs",
     "react-devtools": "react-devtools",
     "run-with-devtools": "cross-env REACT_DEVTOOLS=1 run-p --print-label react-devtools start",
-    "update-signal-symbols": "node scripts/update-signal-symbols.mjs"
+    "update-signal-symbols": "node scripts/update-signal-symbols.mjs",
+    "changeset:version": "changeset version && pnpm install --lockfile-only",
+    "changeset:publish": "changeset publish"
   },
   "optionalDependencies": {
     "fs-xattr": "0.4.0"
