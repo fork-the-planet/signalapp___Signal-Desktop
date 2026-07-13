@@ -35,6 +35,7 @@ const EXTENSIONS_TO_CHECK = new Set([
 ]);
 const FILES_TO_IGNORE = [
   '.changeset/*.md',
+  'packages/*/CHANGELOG.md',
   '.github/ISSUE_TEMPLATE/bug_report.md',
   '.github/PULL_REQUEST_TEMPLATE.md',
   '.smartling-source.sh',
