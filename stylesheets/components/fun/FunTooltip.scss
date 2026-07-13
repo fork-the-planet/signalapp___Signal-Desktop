@@ -22,6 +22,5 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   pointer-events: none;
-  user-select: none;
   @include mixins.font-body-2();
 }

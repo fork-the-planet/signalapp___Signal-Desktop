@@ -125,7 +125,7 @@ export function MessageRequestActions({
         <div
           className={tw(
             // oxlint-disable-next-line better-tailwindcss/no-restricted-classes
-            'mb-2 text-center type-body-medium text-[#C84118] select-none'
+            'mb-2 text-center type-body-medium text-[#C84118]'
           )}
         >
           <AxoSymbol.InlineGlyph symbol="error-triangle" label={null} />

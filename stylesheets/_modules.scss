@@ -507,8 +507,6 @@ $message-padding-horizontal: 12px;
 }
 
 .module-message__attachment-too-big {
-  user-select: none;
-
   margin-inline: -$message-padding-horizontal;
   margin-top: -$message-padding-vertical;
   margin-bottom: -$message-padding-vertical;
@@ -656,7 +654,6 @@ $message-padding-horizontal: 12px;
   @include mixins.button-reset;
 
   & {
-    user-select: none;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -690,7 +687,6 @@ $message-padding-horizontal: 12px;
 .module-message__simple-attachment__icon__extension {
   @include mixins.font-subtitle;
   text-transform: lowercase;
-  user-select: none;
 
   // Along with flow layout in parent item, centers text
   text-align: center;
@@ -721,7 +717,6 @@ $message-padding-horizontal: 12px;
   @include mixins.font-body-1-bold;
 
   margin-top: 2px;
-  user-select: none;
   font-weight: 500;
 
   // Handling really long filenames - cut them off
@@ -776,7 +771,6 @@ $message-padding-horizontal: 12px;
   @include mixins.font-body-small;
 
   margin-top: 2px;
-  user-select: none;
   white-space: no-wrap;
 
   @include mixins.light-theme {
@@ -1045,7 +1039,6 @@ $message-padding-horizontal: 12px;
 .module-message__author {
   @include mixins.font-body-small-bold;
 
-  user-select: none;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 3px;
@@ -1081,6 +1074,7 @@ $message-padding-horizontal: 12px;
   overflow-wrap: break-word;
   word-break: auto-phrase;
   white-space: pre-wrap;
+  user-select: text;
 
   @include mixins.light-theme {
     color: variables.$color-white-alpha-90;
@@ -1152,7 +1146,6 @@ $message-padding-horizontal: 12px;
   @include mixins.font-body-1-italic;
 }
 .module-message__text--delete-for-everyone {
-  user-select: none;
   color: light-dark(variables.$color-gray-60, variables.$color-gray-25);
 }
 
@@ -1165,7 +1158,6 @@ $message-padding-horizontal: 12px;
   justify-content: flex-end;
   margin-top: 3px;
   font-style: normal;
-  user-select: none;
   white-space: nowrap;
   color: var(--axo-color-label-secondary);
 
@@ -1423,7 +1415,6 @@ $message-padding-horizontal: 12px;
 
   &__container {
     cursor: default;
-    user-select: none;
   }
 
   &__ribbon-horizontal {
@@ -1493,10 +1484,6 @@ $message-padding-horizontal: 12px;
 .module-message__redeemed-gift-badge {
   display: flex;
   flex-direction: row;
-
-  &__container {
-    user-select: none;
-  }
 
   &__badge {
     height: 64px;
@@ -1706,7 +1693,6 @@ $message-padding-horizontal: 12px;
   z-index: variables.$z-index-above-base;
   height: 22px;
   display: flex;
-  user-select: none;
 
   &--incoming {
     align-self: flex-end;
@@ -2242,7 +2228,6 @@ $timer-icons:
   max-width: 750px;
   margin-block: 0;
   margin-inline: auto;
-  user-select: none;
 
   @at-root .conversation #{&} {
     overflow-y: auto;
@@ -2270,7 +2255,6 @@ button.ConversationDetails__action-button {
 
   &__message {
     @include mixins.font-body-2;
-    user-select: none;
     text-align: center;
     margin-bottom: 12px;
 
@@ -3450,7 +3434,6 @@ button.module-image__border-overlay:focus {
     justify-content: center;
     text-align: center;
     transition: opacity 100ms ease-out;
-    user-select: none;
     z-index: variables.$z-index-base;
 
     &::before {
@@ -3958,7 +3941,6 @@ button.module-image__border-overlay:focus {
       height: 60px;
       padding-block: 0 10px;
       padding-inline: 12px;
-      user-select: none;
       width: 100%;
       z-index: variables.$z-index-above-base;
     }
@@ -4184,7 +4166,6 @@ button.module-image__border-overlay:focus {
       // The avatar image can be dragged on Windows.
       .module-Avatar img {
         -webkit-user-drag: none;
-        -webkit-user-select: none;
       }
 
       .module-calling__background--no-avatar {
@@ -4452,7 +4433,6 @@ button.module-image__border-overlay:focus {
       list-style-type: none;
       border-radius: 6px;
       cursor: auto;
-      user-select: none;
     }
     &.module-calling-participants-list__clickable {
       cursor: pointer;
@@ -4728,7 +4708,6 @@ button.module-calling-participants-list__contact {
         margin-inline: 0;
         padding-block: 8px;
         padding-inline: 14px;
-        user-select: none;
         width: 100%;
 
         --conversation-item-bg: transparent;
@@ -5226,7 +5205,6 @@ button.module-calling-participants-list__contact {
       padding-bottom: 8px;
       padding-inline-start: 16px;
       text-overflow: ellipsis;
-      user-select: none;
       white-space: nowrap;
 
       @include mixins.dark-theme {
@@ -5329,7 +5307,6 @@ button.module-calling-participants-list__contact {
 .module-left-pane__header {
   flex-grow: 0;
   flex-shrink: 0;
-  user-select: none;
 
   &__contents {
     width: 100%;
@@ -5513,7 +5490,6 @@ button.module-calling-participants-list__contact {
 
   flex-grow: 0;
   flex-shrink: 0;
-  user-select: none;
 
   padding: 1em;
 
@@ -5753,7 +5729,6 @@ button.module-calling-participants-list__contact {
 .module-last-seen-indicator {
   padding-top: 25px;
   padding-bottom: 35px;
-  user-select: none;
 }
 
 .module-last-seen-indicator__bar {

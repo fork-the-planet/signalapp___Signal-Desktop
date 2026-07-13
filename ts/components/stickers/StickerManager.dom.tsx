@@ -154,7 +154,7 @@ export const StickerManager = memo(function StickerManagerInner({
           <>
             <h2
               className={tw(
-                'mx-2 my-1 type-body-medium font-semibold text-primary select-none'
+                'mx-2 my-1 type-body-medium font-semibold text-primary'
               )}
             >
               {i18n('icu:stickers--StickerManager--BlessedPacks')}
@@ -162,11 +162,7 @@ export const StickerManager = memo(function StickerManagerInner({
             {blessedPacks.length > 0 ? (
               blessedPacks.map(pack => renderStickerPackRow(pack))
             ) : (
-              <p
-                className={tw(
-                  'mx-2 mb-1 type-body-small text-secondary select-none'
-                )}
-              >
+              <p className={tw('mx-2 mb-1 type-body-small text-secondary')}>
                 {i18n('icu:stickers--StickerManager--BlessedPacks--Empty')}
               </p>
             )}
@@ -176,16 +172,12 @@ export const StickerManager = memo(function StickerManagerInner({
               <>
                 <h2
                   className={tw(
-                    'mx-2 mt-2 mb-0.5 type-body-medium font-semibold text-primary select-none'
+                    'mx-2 mt-2 mb-0.5 type-body-medium font-semibold text-primary'
                   )}
                 >
                   {i18n('icu:stickers--StickerManager--ReceivedPacks2')}
                 </h2>
-                <p
-                  className={tw(
-                    'mx-2 mb-1 type-body-small text-secondary select-none'
-                  )}
-                >
+                <p className={tw('mx-2 mb-1 type-body-small text-secondary')}>
                   {i18n(
                     'icu:stickers--StickerManager--ReceivedPacksDescription'
                   )}

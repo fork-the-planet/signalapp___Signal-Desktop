@@ -382,7 +382,7 @@ export namespace AxoTooltip {
               hideWhenDetached
               className={tw(
                 'group flex items-baseline justify-center gap-2 overflow-hidden',
-                'rounded-[14px] px-2.5 py-1.5 type-body-small select-none',
+                'rounded-[14px] px-2.5 py-1.5 type-body-small',
                 'legacy-z-index-above-popup',
                 'bg-material-dim-primary text-primary-oncolor backdrop-blur-thin',
                 'shadow-elevation-3 shadow-no-outline',

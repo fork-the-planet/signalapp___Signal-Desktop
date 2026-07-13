@@ -12,7 +12,6 @@
   flex-direction: column;
   flex-shrink: 0;
   padding-top: var(--title-bar-drag-area-height);
-  user-select: none;
   background: var(--axo-color-surface-secondary);
   border-inline-end: 1px solid var(--axo-color-border-primary);
 }

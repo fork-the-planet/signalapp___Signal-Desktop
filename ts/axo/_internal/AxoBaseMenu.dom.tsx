@@ -27,7 +27,6 @@ export namespace AxoBaseMenu {
   const baseContentStyles = tw(
     LEGACY_CONTEXT_MENU_Z_INDEX,
     'max-w-[300px] min-w-[200px]',
-    'select-none',
     'curved-xl bg-material-tertiary shadow-elevation-3 backdrop-blur-regular',
     isTestOrMockEnvironment() ||
       'animate-opacity-0 data-[state=closed]:animate-exit',

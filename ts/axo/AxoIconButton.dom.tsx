@@ -28,7 +28,7 @@ export namespace AxoIconButton {
    */
 
   const baseStyles = tw(
-    'relative rounded-full leading-none select-none',
+    'relative rounded-full leading-none',
     'not-forced-colors:outline-none keyboard-mode:focus:axo-focus-ring',
     'forced-colors:border forced-colors:border-[ButtonBorder] forced-colors:bg-[ButtonFace] forced-colors:text-[ButtonText]',
     'forced-colors:aria-disabled:text-[GrayText]',

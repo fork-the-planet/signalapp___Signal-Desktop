@@ -68,7 +68,7 @@ export namespace AxoButton {
   export type Arrow = 'collapse' | 'expand' | 'next';
 
   const baseStyles = tw(
-    'relative inline-flex max-w-full items-center-safe justify-center-safe rounded-full select-none',
+    'relative inline-flex max-w-full items-center-safe justify-center-safe rounded-full',
     'outline-none keyboard-mode:focus:axo-focus-ring',
     'forced-colors:border',
     'forced-colors:aria-disabled:text-[GrayText]'

@@ -431,7 +431,6 @@
   &__editing-message {
     @include mixins.font-body-2-bold;
     margin-top: 10px;
-    user-select: none;
 
     &::before {
       content: '';

@@ -22,7 +22,7 @@ export function TimelineDateHeader({
     <div className={tw('flex justify-center p-5')}>
       <div
         className={tw(
-          'type-body-medium text-secondary select-none',
+          'type-body-medium text-secondary',
           isSignalConversation
             ? 'rounded-3xl border border-secondary bg-(--axo-color-legacy-signal-conversation-bg) px-2.5 py-1 ' +
                 'type-body-small font-medium dark:text-secondary-oncolor'

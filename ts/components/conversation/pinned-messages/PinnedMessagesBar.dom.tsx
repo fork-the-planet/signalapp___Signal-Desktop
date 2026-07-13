@@ -237,7 +237,7 @@ function Row(props: { children: ReactNode }) {
     <AriaClickable.Root
       className={tw(
         'contain-strict',
-        'flex h-14 items-center pe-3 select-none',
+        'flex h-14 items-center pe-3',
         'rounded-xs',
         'outline-none data-focused:axo-focus-ring'
       )}

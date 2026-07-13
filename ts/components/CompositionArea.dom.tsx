@@ -990,7 +990,7 @@ export const CompositionArea = memo(function CompositionArea({
       <div
         className={tw(
           'border-t border-primary py-[16px]',
-          'text-center type-body-small text-secondary select-none'
+          'text-center type-body-small text-secondary'
         )}
         data-testid="CompositionArea--group-terminated"
       >

@@ -904,7 +904,6 @@ $rtl-icon-map: (
   height: 100vh;
   justify-content: center;
   line-height: 30px;
-  user-select: none;
 
   @include light-theme {
     background: variables.$color-gray-02;
@@ -1107,7 +1106,6 @@ $rtl-icon-map: (
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  user-select: none;
 
   &:before {
     $icon-size: 16px;
@@ -1146,7 +1144,6 @@ $rtl-icon-map: (
   border-radius: 4px;
   margin-bottom: 6px;
   z-index: variables.$z-index-context-menu;
-  user-select: none;
 
   @include popper-shadow();
 

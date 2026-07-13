@@ -388,7 +388,6 @@
       border: 2px solid transparent;
       padding-block: 8px;
       padding-inline: 24px;
-      user-select: none;
       @include mixins.font-body-2;
 
       &--button {

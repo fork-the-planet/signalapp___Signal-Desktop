@@ -141,7 +141,6 @@ $audio-attachment-button-margin-small: 4px;
 .module-message__audio-attachment__countdown {
   @include mixins.font-caption;
   width: $audio-attachment-button-size;
-  user-select: none;
   text-align: center;
   white-space: nowrap;
   margin-inline-end: 12px;

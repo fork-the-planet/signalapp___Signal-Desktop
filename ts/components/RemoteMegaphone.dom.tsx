@@ -70,16 +70,12 @@ export function RemoteMegaphone({
           <div className={tw('w-full')}>
             <h2
               className={tw(
-                'mt-[2px] type-body-medium font-semibold text-primary select-none'
+                'mt-[2px] type-body-medium font-semibold text-primary'
               )}
             >
               {title}
             </h2>
-            <p
-              className={tw(
-                'mt-[2px] type-body-small text-secondary select-none'
-              )}
-            >
+            <p className={tw('mt-[2px] type-body-small text-secondary')}>
               {body}
             </p>
           </div>

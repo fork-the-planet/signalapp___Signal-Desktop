@@ -118,7 +118,6 @@ button:not(:disabled, [aria-disabled='true']) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  user-select: none;
 
   .dot-container {
     display: flex;

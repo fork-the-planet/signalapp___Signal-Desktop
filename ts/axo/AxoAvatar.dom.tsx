@@ -147,7 +147,7 @@ export namespace AxoAvatar {
       <SizeContext.Provider value={props.size}>
         <div
           className={tw(
-            'relative shrink-0 rounded-full contain-layout select-none',
+            'relative shrink-0 rounded-full contain-layout',
             RootSizes.get(props.size),
             props.ring != null && RingSizes.get(props.size),
             props.ring === 'unread' && 'border-selected',

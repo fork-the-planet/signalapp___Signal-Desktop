@@ -155,7 +155,6 @@ export namespace AxoTextField {
           'border-[0.5px] border-primary',
           'shadow-elevation-0 shadow-no-outline',
           'placeholder:text-placeholder',
-          'select-none',
           'not-forced-colors:has-[input:focus]:axo-focus-ring',
           'forced-colors:border-[ButtonBorder] forced-colors:bg-[ButtonFace] forced-colors:text-[ButtonText]'
         )}
