@@ -51,4 +51,4 @@ jobs:
           create-github-releases: false
           push-git-tags: true
           commit-mode: github-api
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.AUTOMATED_GITHUB_PAT }}
