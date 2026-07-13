@@ -54,7 +54,7 @@ const getQrCodeClassName = getClassNamesFor(
 );
 
 const SUPPORT_PAGE =
-  'https://support.signal.org/hc/articles/360007320451#desktop_multiple_device';
+  'https://support.signal.org/hc/articles/360007320551-Linked-Devices';
 
 export function InstallScreenQrCodeNotScannedStep({
   currentVersion,
