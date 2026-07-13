@@ -23,7 +23,7 @@ const PackageSchema = z.discriminatedUnion(
       publishConfig: z.strictObject({
         access: z.literal('public'),
         registry: z.literal('https://registry.npmjs.org/'),
-        provenance: z.literal(true),
+        provenance: z.literal(false),
       }),
     }),
   ]
@@ -56,7 +56,9 @@ await Promise.all(
       '"publishConfig": {',
       '  "access": "public",',
       '  "registry": "https://registry.npmjs.org/",',
-      '  "provenance": true',
+      // provenance is not supported in private repos
+      // https://docs.npmjs.com/trusted-publishers#automatic-provenance-generation
+      '  "provenance": false',
       '}',
       '```',
       '',
