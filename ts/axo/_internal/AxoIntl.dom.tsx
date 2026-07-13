@@ -24,6 +24,9 @@ export namespace AxoIntl {
   /** Map of all message keys to their translated strings. */
   export type Messages = Record<MessageKey, string>;
 
+  /** Directionality of text */
+  export type Direction = 'ltr' | 'rtl';
+
   /** The intl API available via `useAxoIntl`. */
   export type ContextType = Readonly<{
     get: (key: MessageKey) => string;
