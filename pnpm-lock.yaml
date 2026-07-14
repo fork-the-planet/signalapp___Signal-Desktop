@@ -44,8 +44,8 @@ importers:
         specifier: 2.0.21
         version: 2.0.21
       '@signalapp/libsignal-client':
-        specifier: 0.96.4
-        version: 0.96.4
+        specifier: 0.97.3
+        version: 0.97.3
       '@signalapp/mute-state-change':
         specifier: workspace:*
         version: link:packages/mute-state-change
@@ -153,8 +153,8 @@ importers:
         specifier: 1.0.1
         version: 1.0.1
       '@signalapp/mock-server':
-        specifier: 24.0.2
-        version: 24.0.2(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+        specifier: 24.0.3
+        version: 24.0.3(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       '@signalapp/parchment-cjs':
         specifier: 3.0.1
         version: 3.0.1
@@ -4467,14 +4467,14 @@ packages:
   '@signalapp/libsignal-client@0.92.2':
     resolution: {integrity: sha512-mSYKpw32Rtmm+D1y8NKzNA9wkiuU60gXRGuum6NTGRN9C3NI4R1cb6xE9w7q+6rjR4zAb4qZWb9QUG5QcLr7pg==, tarball: https://registry.npmjs.org/@signalapp/libsignal-client/-/libsignal-client-0.92.2.tgz}
 
-  '@signalapp/libsignal-client@0.96.4':
-    resolution: {integrity: sha512-alldCRkl1uTt1RW1Aszrg0Dj4eWMCQvcAf6H7nIx5TFkM10m+pskQM+CgLa6ZbdHifIKEV9e/vAFFif8XxSWWA==, tarball: https://registry.npmjs.org/@signalapp/libsignal-client/-/libsignal-client-0.96.4.tgz}
+  '@signalapp/libsignal-client@0.97.3':
+    resolution: {integrity: sha512-woAz2yoScvTCwu7V9+I/UtNKi2sPQHDZZl9yHQhzmJVt7EsEU1Gw1pC6JWUaff3KNVoJ9ZJTkK1sLqqHbsex5A==, tarball: https://registry.npmjs.org/@signalapp/libsignal-client/-/libsignal-client-0.97.3.tgz}
 
   '@signalapp/minimask@1.0.1':
     resolution: {integrity: sha512-QAwo0joA60urTNbW9RIz6vLKQjy+jdVtH7cvY0wD9PVooD46MAjE40MLssp4xUJrph91n2XvtJ3pbEUDrmT2AA==, tarball: https://registry.npmjs.org/@signalapp/minimask/-/minimask-1.0.1.tgz}
 
-  '@signalapp/mock-server@24.0.2':
-    resolution: {integrity: sha512-UO4bUB0z1HGB/FvIVuUnw9I8P6jM6GONI4l5yHjngIbreVhTuJ+EoyhZWhrK9WUimE9pMtNBBbPla6SwLxickQ==, tarball: https://registry.npmjs.org/@signalapp/mock-server/-/mock-server-24.0.2.tgz}
+  '@signalapp/mock-server@24.0.3':
+    resolution: {integrity: sha512-SGV0S6WvYYZRBx+F2Z+xLiTrxxtDaF8wU+orqKXWs4KU8/u1es+di6Eaoat2U9hC/eOU85hEZrpqMHVO5ad9CA==, tarball: https://registry.npmjs.org/@signalapp/mock-server/-/mock-server-24.0.3.tgz}
 
   '@signalapp/parchment-cjs@3.0.1':
     resolution: {integrity: sha512-hSBMQ1M7wE4GcC8ZeNtvpJF+DAJg3eIRRf1SiHS3I3Algav/sgJJNm6HIYm6muHuK7IJmuEjkL3ILSXgmu0RfQ==, tarball: https://registry.npmjs.org/@signalapp/parchment-cjs/-/parchment-cjs-3.0.1.tgz}
@@ -15242,14 +15242,14 @@ snapshots:
       node-gyp-build: 4.8.4
       type-fest: 4.26.1
 
-  '@signalapp/libsignal-client@0.96.4':
+  '@signalapp/libsignal-client@0.97.3':
     dependencies:
       node-gyp-build: 4.8.4
       type-fest: 4.26.1
 
   '@signalapp/minimask@1.0.1': {}
 
-  '@signalapp/mock-server@24.0.2(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
+  '@signalapp/mock-server@24.0.3(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
       '@indutny/parallel-prettier': 3.0.0(prettier@3.8.3)
       '@indutny/protopiler': 4.0.0

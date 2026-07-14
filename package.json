@@ -124,7 +124,7 @@
   "dependencies": {
     "@indutny/mac-screen-share": "1.2.5",
     "@indutny/simple-windows-notifications": "2.0.21",
-    "@signalapp/libsignal-client": "0.96.4",
+    "@signalapp/libsignal-client": "0.97.3",
     "@signalapp/mute-state-change": "workspace:*",
     "@signalapp/ringrtc": "2.69.7",
     "@signalapp/sqlcipher": "3.3.9",
@@ -162,7 +162,7 @@
     "@react-spring/web": "10.0.3",
     "@signalapp/lame": "workspace:*",
     "@signalapp/minimask": "1.0.1",
-    "@signalapp/mock-server": "24.0.2",
+    "@signalapp/mock-server": "24.0.3",
     "@signalapp/parchment-cjs": "3.0.1",
     "@signalapp/quill-cjs": "2.1.2",
     "@storybook/addon-a11y": "8.4.4",
