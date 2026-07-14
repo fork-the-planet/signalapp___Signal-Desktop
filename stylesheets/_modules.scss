@@ -2245,14 +2245,6 @@ button.ConversationDetails__action-button {
   padding-block: 8px 12px;
   padding-inline: 16px;
 
-  @include mixins.light-theme {
-    background: variables.$color-white;
-  }
-
-  @include mixins.dark-theme {
-    background: variables.$color-gray-95;
-  }
-
   &__message {
     @include mixins.font-body-2;
     text-align: center;

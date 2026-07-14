@@ -123,7 +123,7 @@ export function CompositionRecording({
         className={tw(
           'shrink-0 grow overflow-hidden',
           'flex flex-row-reverse items-center gap-0.5',
-          'bg-material-tertiary',
+          'bg-surface-message-incoming',
           'h-full basis-0 rounded-sm'
         )}
       >

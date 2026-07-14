@@ -180,7 +180,7 @@ export function MessageRequestActions({
                   setMrState(MessageRequestState.unblocking);
                 }}
                 size="md"
-                variant="strong-secondary"
+                variant="subtle-secondary"
               >
                 {i18n('icu:MessageRequests--unblock')}
               </AxoButton.Root>
@@ -198,7 +198,7 @@ export function MessageRequestActions({
                   }
                 }}
                 size="md"
-                variant="strong-secondary"
+                variant="subtle-secondary"
               >
                 {i18n('icu:MessageRequests--accept')}
               </AxoButton.Root>
