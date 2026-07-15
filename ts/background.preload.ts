@@ -3020,6 +3020,7 @@ async function startApp(): Promise<void> {
         masterKey: message.groupV2.masterKey,
         secretParams: message.groupV2.secretParams,
         publicParams: message.groupV2.publicParams,
+        needsGroupUpdate: true,
       });
 
       return {

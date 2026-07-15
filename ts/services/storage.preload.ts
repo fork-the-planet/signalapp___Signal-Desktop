@@ -381,6 +381,16 @@ async function generateManifest(
       };
       identifierType = ITEM_TYPE.CONTACT;
     } else if (conversationType === ConversationTypes.GroupV2) {
+      // Group just added via an incoming message, get updates from the server
+      // first before syncing it to storage service.
+      if (conversation.get('needsGroupUpdate') === true) {
+        log.warn(
+          `upload(${version}): ` +
+            `dropping group=${conversation.idForLogging()} until it is updated`
+        );
+        continue;
+      }
+
       storageRecord = {
         record: {
           groupV2: toGroupV2Record(conversation),

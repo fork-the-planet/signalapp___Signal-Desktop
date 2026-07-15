@@ -1265,6 +1265,7 @@ export async function mergeGroupV2Record(
     storySendMode,
 
     needsStorageServiceSync: false,
+    needsGroupUpdate: undefined,
   });
 
   // We only update verified name hash if it is truthy, to avoid races where a linked
